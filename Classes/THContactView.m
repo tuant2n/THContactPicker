@@ -265,4 +265,8 @@
     return self.textField.returnKeyType;
 }
 
+- (UIKeyboardType)keyboardType {
+    return self.textField.keyboardType;
+}
+
 @end

@@ -265,6 +265,10 @@
     return self.textField.returnKeyType;
 }
 
+- (void)setKeyboardType:(UIKeyboardType)keyboardType {
+    self.textField.keyboardType = keyboardType;
+}
+
 - (UIKeyboardType)keyboardType {
     return self.textField.keyboardType;
 }

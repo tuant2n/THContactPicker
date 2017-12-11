@@ -184,8 +184,8 @@
     contactView.maxWidth = self.frame.size.width - self.promptLabel.frame.origin.x - 2 * _contactHorizontalPadding - 2 * kHorizontalSidePadding;
     contactView.minWidth = kTextFieldMinWidth + 2 * _contactHorizontalPadding;
     contactView.keyboardAppearance = self.keyboardAppearance;
-    contactView.returnKeyType = self.returnKeyType;
-    contactView.keyboardType = self.keyboardType;
+    contactView.returnKeyType = UIReturnKeyDone;
+    contactView.keyboardType = UIKeyboardTypeEmailAddress;
     contactView.delegate = self;
     [contactView setFont:self.font];
     

@@ -87,6 +87,7 @@
     self.textField = [[THContactTextField alloc] init];
     self.textField.delegate = self;
     self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    self.textField.returnKeyType = UIReturnKeyDone;
     
     self.backgroundColor = [UIColor whiteColor];
     

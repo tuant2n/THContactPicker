@@ -32,12 +32,12 @@
 
 @implementation THContactPickerView
 
-#define kVerticalViewPadding				5   // the amount of padding on top and bottom of the view
+#define kVerticalViewPadding				8   // the amount of padding on top and bottom of the view
 #define kHorizontalPadding					0   // the amount of padding to the left and right of each contact view
 #define kHorizontalPaddingWithBackground	2   // the amount of padding to the left and right of each contact view (when bubbles have a non white background)
 #define kHorizontalSidePadding				12  // the amount of padding on the left and right of the view
 #define kVerticalPadding					2   // amount of padding above and below each contact view
-#define kTextFieldMinWidth					20  // minimum width of trailing text view
+#define kTextFieldMinWidth					40  // minimum width of trailing text view
 #define KMaxNumberOfLinesDefault			2
 
 - (id)initWithCoder:(NSCoder *)aDecoder {

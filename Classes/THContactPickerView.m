@@ -32,7 +32,7 @@
 
 @implementation THContactPickerView
 
-#define kVerticalViewPadding				8   // the amount of padding on top and bottom of the view
+#define kVerticalViewPadding				10   // the amount of padding on top and bottom of the view
 #define kHorizontalPadding					0   // the amount of padding to the left and right of each contact view
 #define kHorizontalPaddingWithBackground	2   // the amount of padding to the left and right of each contact view (when bubbles have a non white background)
 #define kHorizontalSidePadding				12  // the amount of padding on the left and right of the view
@@ -88,6 +88,7 @@
     self.textField.delegate = self;
     self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
     self.textField.returnKeyType = UIReturnKeyDone;
+    self.textField.keyboardType = UIKeyboardTypeEmailAddress;
     
     self.backgroundColor = [UIColor whiteColor];
     
@@ -184,6 +185,7 @@
     contactView.minWidth = kTextFieldMinWidth + 2 * _contactHorizontalPadding;
     contactView.keyboardAppearance = self.keyboardAppearance;
     contactView.returnKeyType = self.returnKeyType;
+    contactView.keyboardType = self.keyboardType;
     contactView.delegate = self;
     [contactView setFont:self.font];
     

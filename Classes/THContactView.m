@@ -107,6 +107,9 @@
     
     self.textField = [[THContactTextField alloc] init];
 	self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    self.textField.returnKeyType = UIReturnKeyDone;
+    self.textField.keyboardType = UIKeyboardTypeEmailAddress;
+    
     self.textField.delegate = self;
     self.textField.hidden = YES;
     [self addSubview:self.textField];
